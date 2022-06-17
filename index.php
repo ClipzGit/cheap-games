@@ -1,22 +1,3 @@
-<?php
-if(isset($_POST['SubmitButton'])){ 
-  //check if form was submitted
-  $game_title = $_POST['game_title'];
-  $ch = curl_init("https://www.cheapshark.com/api/1.0/games?title={$game_title}");
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-  $response = curl_exec($ch);
-
-
-  curl_close($ch);
-  $data = json_decode($response, true);
-
-
-}    
-?>
-
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
