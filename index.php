@@ -9,6 +9,7 @@
 </head>
 <body class="bg-slate-800">
 
+<<<<<<< HEAD
 <section id="main-container" class="flex flex-col justify-center content-center text-center">
     <div id="top-content" class="mt-2">
         <img src="img/logo.png" class="inline content-center">
@@ -33,6 +34,17 @@
     ?>
 
 
+=======
+    <?php 
+    include_once('./frontend/header.php');
+    ?>
+
+    <section id="game-results" class="mt-5 flex flex-wrap flex-col md:flex-row md:space-x-6 justify-center content-center">
+
+    <?php 
+    include('./backend/request.php');
+     ?>
+>>>>>>> f365370d20a61c2bb454d3435381ef48371ea7b6
     </section>
 </body>
 </html>
